@@ -33,7 +33,7 @@ public class Spaces : MonoBehaviour {
 		foreach(ItemHolder item in GetComponentsInChildren<ItemHolder>())
 			if(!item.dragging)Destroy(item.gameObject);	
 		
-		BetterList<Item> items = CurrentInventory.getItems();
+		ArrayList<Item> items = CurrentInventory.getItems();
 		
 		foreach(Item item in items) {
 			if(item.inventorySlot < slots.Length) {

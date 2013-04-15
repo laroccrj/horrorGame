@@ -3,7 +3,7 @@ using System.Collections;
 
 static class CurrentInventory : object {
 
-	private static BetterList<Item> items = new BetterList<Item>();
+	private static ArrayList<Item> items = new ArrayList<Item>();
 	private static Item hand;
 	private static Item flashlight;
 	
@@ -39,7 +39,7 @@ static class CurrentInventory : object {
 		items.Remove(item);	
 	}
 	
-	public static BetterList<Item> getItems() {
+	public static ArrayList<Item> getItems() {
 		return items;	
 	}
 	
